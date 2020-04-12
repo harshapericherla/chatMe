@@ -14,5 +14,5 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api',indexRouter);
 
-const server = app.listen(3000);
+const server = app.listen(process.env.PORT || 3000);
 require('./chat')(app,server);
