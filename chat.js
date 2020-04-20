@@ -32,7 +32,7 @@ const sendMsg = async (sendObj,io) => {
     let fromId = sendObj.fromId;
     let toId = sendObj.toId;
     let message = sendObj.message;
-    let timeStamp = sendObj.date;
+    let timeStamp = sendObj.timeStamp;
 
     let newMessage = new Message();
     newMessage.fromId = fromId;

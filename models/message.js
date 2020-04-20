@@ -13,7 +13,7 @@ const MessageSchema = mongoose.Schema({
         required: true
     },
     timeStamp: {
-        type:Date,
+        type:String,
         required: true
     }
 },{collection: 'messages'});

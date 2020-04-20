@@ -9,5 +9,6 @@ router.get('/logout',loginCtrl.logoutUser);
 router.post('/register',loginCtrl.registerUser);
 router.get('/checkUserLogged',loginCtrl.userLoggedIn);
 router.post('/getMessages',homeCtrl.getUserMessages);
+router.get('/getDate',homeCtrl.getDate);
 
 module.exports = router;

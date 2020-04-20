@@ -27,7 +27,16 @@ const getUserMessages = async(req,res) => {
     return;
 }
 
+const getDate = (req,res) => {
+    const nDate = new Date().toLocaleString('en-US', {
+        timeZone: "Asia/Kolkata"
+    });
+    res.status(200).json(nDate);
+    return;
+}
+
 module.exports = {
     getListUsers,
-    getUserMessages
+    getUserMessages,
+    getDate
 }
